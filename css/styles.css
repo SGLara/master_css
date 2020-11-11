@@ -1,7 +1,10 @@
 @font-face {
     font-family: "nevis";
     src: url("../fonts/nevis.eot");
-    src: url("../fonts/nevis.eot?#iefix") format("embedded-opentype"), url("../fonts/nevis.woff") format("woff"), url("../fonts/nevis.ttf") format("truetype"), url("../fonts/nevis.svg") format("svg");
+    src: url("../fonts/nevis.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/nevis.woff") format("woff"),
+         url("../fonts/nevis.ttf") format("truetype"),
+         url("../fonts/nevis.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -9,6 +12,17 @@
 @font-face {
     font-family: "fjalla";
     src: url("../fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+         url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+         url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -38,6 +52,23 @@ a:hover {
 .blue {
     color: #0c73f2 !important;
 }
+
+.orange {
+    color: orange !important;
+}
+
+.icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
 header {
     min-width: 1024px;
     width: 100%;
@@ -157,8 +188,8 @@ header h1:hover {
 }
 
 .phrase {
-    clear: both;
-    padding: 20px;
+    width: 180px;
+    padding: 10px;
     font-size: 14px;
     text-align: justify;
     font-family: sans-serif;
@@ -286,6 +317,7 @@ button:active {
     font-weight: normal;
     letter-spacing: 1px;
     text-align: center;
+    margin-top: -20px;
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #cccccc;
@@ -311,3 +343,33 @@ button:active {
     font-size: 14px;
 }
 
+.sections .sticker1,
+.sections .sticker2 {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+.sections .sticker2 {
+    margin-left: 860px;
+}
+
+.history {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding: 10px 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 0 2px gray;
+}
